@@ -3,8 +3,6 @@
 # Checklist for Northcoders News - Front End
 ✓
 ✗
-
-
 ## README
 
 - [✗] provide general info about app
@@ -13,6 +11,8 @@
 - [✗] specify minimum versions
 - [✓] deploy
 - [✗] link to deployed version
+
+* Need to get the README done with info about cloning the repo, getting it started and with a link to the deployd version
 
 ## UX
 
@@ -29,6 +29,8 @@
 * Consider a colour scheme with a tad less vividity - at the moment the colours are all very intense !
 * Consider using pseudo-classes for the buttons - like background colour shifts when hovering over certain button elements
 * Lovely clear icons with clear symbols - this looks great!
+* Play around with the format of the dates more ... consider using an npm package to get a more user-friendly format
+
 
 ## Functionality
 
@@ -37,6 +39,7 @@
 - [✗] Some indication of who is logged in
 
 * Needs to be clearer who is currently logged in
+* Ensure login changing is at the top of the page
 
 
 ### Articles
@@ -97,7 +100,9 @@
 
 * A default warning from React when navigating to a page with an non-existent article id
 * `setOrder` , `setPage` functions could be made more DRY - consider ways in which you can re-use the functionality, they are essentially doing the same sort of thing
-* 
+* `Header` not dynamically producing list of options - what happens if more icons are addded at a later point
+* Lots of `if` statements when inside the `componentDidMount` lifecycle method in the `Articles` component - how could you make this check cleaner and more DRY ?
+
 
 ## MAKE SURE ALL TESTS ARE STILL PASSING IN BACK END
 
